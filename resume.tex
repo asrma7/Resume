@@ -1,130 +1,214 @@
-\documentclass[11pt,a4paper,sans]{moderncv}
+%-------------------------
+% Resume in Latex
+% Author : Ashutosh Sharma
+% Based off of: https://github.com/jakegut/resume
+% License : MIT
+%------------------------
 
-% ModernCV theme
-\moderncvstyle{classic} % Style options: 'casual', 'classic', 'oldstyle', 'banking'
-\moderncvcolor{grey} % Color options: 'blue', 'green', 'grey', 'orange', 'red', 'purple'
+\documentclass[letterpaper,11pt]{article}
 
-% Font encoding and scalable font setup
-\usepackage{lmodern} % Use scalable fonts
-\usepackage[T1]{fontenc} % Proper font encoding
-\pdfadjustspacing=1 % Disable auto font expansion
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
 
-% Adjust page margins
-\usepackage[scale=0.9]{geometry}
-\usepackage{enumitem} % For better list handling
-\usepackage{titlesec} % For section formatting
-\usepackage{graphicx} % For line separators
-\usepackage{multicol} % For multiple column handling
-\usepackage{hyperref}  % For clickable URLs
 
-% Custom section formatting with line separation
-\titleformat{\section}
-  {\normalfont\Large\bfseries} % Formatting style
-  {} % Label
-  {0pt} % Space before title
-  {\parbox{\dimexpr\textwidth-1.5em\relax}} % Title box adjustment
+%----------FONT OPTIONS----------
+\usepackage{CormorantGaramond}
 
-% Line separator command
-\newcommand{\sectionseparator}{\vspace{5pt}\par\noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}\vspace{0pt}}
 
-% Personal Information
-\name{Ashutosh}{Sharma}
-\title{Cloud and DevOps Engineer | Full-Stack Developer}
-\address{Oshawa, Canada}
-\small % Reduce font size for the contact information
-\email{asrma.sharma@gmail.com}
-\homepage{ashutoshportfolio.site}
-\social[linkedin]{in/asrma7}
-\social[github]{asrma7}
-\normalsize % Restore normal size for the rest of the document
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\setlength{\footskip}{4.08003pt}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
 
-% Content starts here
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \begin{document}
 
-\makecvtitle
+%----------HEADING----------
 
-\section{Professional Summary}
-Cloud and DevOps Engineer | Full-Stack Developer with 3+ years of experience designing scalable, cloud-native applications and robust software solutions. Proven expertise in AWS, Kubernetes, and Terraform for infrastructure as code. Implemented containerized microservices architecture at PharmaKart, achieving \textbf{40\% reduction in deployment time} and \textbf{20\% increase in customer retention}. Skilled in developing secure CI/CD pipelines, microservices architecture, and cross-functional team collaboration.
+\begin{center}
+    \textbf{\Huge \scshape Ashutosh Sharma} \\ \vspace{1pt}
+    {Oshawa, ON, Canada} $|$
+    \small +1 647-226-0267 $|$ \href{mailto:asrma.sharma@gmail.com}{\underline{asrma.sharma@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/asrma7}{\underline{linkedin.com/in/asrma7}} $|$
+    \href{https://ashutoshportfolio.site}{\underline{ashutoshportfolio.site}}
+\end{center}
 
-\sectionseparator
 
-\section{Work Experience}
-\begin{itemize}[leftmargin=*]
-    \item \textbf{Full Stack Developer, Samartha International InfoSolutions, Kathmandu, Nepal} 
-    \hfill \textbf{2020 -- 2023}
-    \begin{itemize}
-        \item Promoted from intern to lead developer within 6 months to spearhead key digital transformation initiatives.
-        \item \textbf{CRM and BPM Solution (Creatio)}: Architected and customized enterprise solutions using C\#, JavaScript, and Ext.JS. Deployed via Kubernetes with RabbitMQ message queuing.
-        \begin{itemize}
-            \item \textbf{Impact}: Increased client productivity by \textbf{25\%} through optimized automation.
-        \end{itemize}
-        \item \textbf{Digital Bill Tracking System}: Developed and deployed a secure bill management platform with ASP.Net backend and Next.js frontend. Implemented GitHub Actions CI/CD pipeline.
-        \begin{itemize}
-            \item \textbf{Impact}: Reduced manual errors by \textbf{15\%}, accelerating tracking by \textbf{20\%}.
-        \end{itemize}
-        \item \textbf{Electronic Attendance with Digital ID}: Built biometric authentication system with ASP.Net Core and React.
-        \begin{itemize}
-            \item \textbf{Impact}: Improved attendance accuracy by \textbf{30\%} and eliminated time fraud.
-        \end{itemize}
-        \item Mentored junior developers and established code review standards, reducing production bugs by \textbf{40\%}.
-    \end{itemize}
-\end{itemize}
+%-----------SUMMARY-----------
+\section{Summary}
+  \resumeSubHeadingListStart
+    \item{
+      {DevOps Engineer \& Full-Stack Developer with 3+ years of experience designing scalable, cloud-native applications and robust software solutions.}
+      {Proven expertise in AWS, Kubernetes, and Terraform for infrastructure as code.}
+      {Skilled in Golang, ASP.NET Core, and React for building high-performance applications.}
+    }
+  \resumeSubHeadingListEnd
 
-\sectionseparator
 
-\section{Projects}
-\begin{itemize}[leftmargin=*]
-    \item \textbf{PharmaKart - E-Pharmacy Platform} (\href{https://github.com/PharmaKart/pharmakart-web}{GitHub}) \hfill \textbf{2025}
-    \begin{itemize}
-        \item Designed and implemented a microservices architecture using \textbf{Golang and gRPC} for high-performance service communication.
-        \item Orchestrated containerized deployments with \textbf{Kubernetes} and provisioned infrastructure using \textbf{Terraform} on AWS.
-        \item Implemented zero-downtime deployment pipelines with \textbf{GitHub Actions}, reducing deployment time by \textbf{40\%}.
-        \item Integrated \textbf{AWS SNS/SQS} for automated medicine refill reminders, improving customer retention by \textbf{20\%}.
-        \item Achieved \textbf{99.9\% uptime} through resilient architecture and proper Kubernetes resource management.
-        \item Optimized database queries and backend workflows, accelerating order processing by \textbf{25\%}.
-    \end{itemize}
-    
-    \item \textbf{Distributed Task Scheduler} \hfill \textbf{2023}
-    \begin{itemize}
-        \item Built a fault-tolerant task scheduling system using \textbf{Node.js}, \textbf{Redis}, and \textbf{MongoDB}.
-        \item Implemented leader election algorithm for high availability, ensuring zero task duplications.
-        \item Containerized the application with \textbf{Docker} and deployed on \textbf{AWS ECS} for automatic scaling.
-        \item Reduced infrastructure costs by \textbf{30\%} through efficient resource utilization.
-    \end{itemize}
-\end{itemize}
-
-\sectionseparator
-
+%-----------EDUCATION-----------
 \section{Education}
-\begin{tabular}{@{}p{0.7\textwidth} p{0.3\textwidth}@{}}
-    \textbf{Postgraduate in Cloud Computing}, Durham College, Oshawa, ON, Canada & \hfill \textbf{2024 -- 2025} \\
-    \textit{Relevant coursework: Cloud Architecture, DevOps Engineering, Microservices Design} & \\
-    \textbf{Postgraduate in Cybersecurity}, Durham College, Oshawa, ON, Canada & \hfill \textbf{2023 -- 2024} \\
-    \textit{Relevant coursework: Penetration Testing, Cloud Security, Security Operations} & \\
-    \textbf{BSc. Hons Computing}, Leeds Beckett University, Leeds, United Kingdom & \hfill \textbf{2018 -- 2022} \\
-    \textit{Graduated with First Class Honours (GPA: 3.8/4.0)} & \\
-\end{tabular}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Durham College}{Oshawa, ON}
+      {Post Graduate Certificate in Cybersecurity \& Cloud Computing}{Sep. 2023 -- Apr. 2025}
+      \resumeItemListStart
+        \resumeItem{Secure Software Development, Cloud Security, Network Security, Ethical Hacking, Splunk Fundamentals}
+        \resumeItem{AWS, Azure, GCP, Kubernetes, Terraform, Jenkins, CodePipeline, Github Actions, CI/CD, DevSecOps}
+        \resumeItem{\textbf{GPA}: 4.75/5.0}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Leeds Beckett University}{Leeds, UK}
+      {Bachelor of Science Honours Computing}{Feb. 2019 -- July 2022}
+        \resumeItemListStart
+            \resumeItem{Software Development, Web Development, Database Management, SDLC, Networking}
+            \resumeItem{Java, Python, C\#, JavaScript, SQL, HTML, CSS, PHP, ASP.NET, React, Node.js, Express, MongoDB, PostgreSQL}
+            \resumeItem{\textbf{GPA}: 3.8/4.0}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
 
-\sectionseparator
 
+
+%
+%-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
-\cvitem{}{\textbf{Cloud Platforms}: AWS (EC2, S3, Lambda, ECS, CloudFormation), Azure, GCP}
-\cvitem{}{\textbf{DevOps \& IaC}: Docker, Kubernetes, Terraform, Jenkins, GitHub Actions}
-\cvitem{}{\textbf{Languages}: Golang, TypeScript, JavaScript, Python, C\#, SQL}
-\cvitem{}{\textbf{Frameworks}: React, Next.js, ASP.NET Core, gRPC, Flask}
-\cvitem{}{\textbf{Databases}: PostgreSQL, MongoDB, MS SQL, DynamoDB}
-\cvitem{}{\textbf{Monitoring \& Security}: Prometheus, Grafana, SonarQube, AWS CloudTrail}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+        {\textbf{Cloud Platforms}: AWS (EC2, S3, Lambda, ECS, CloudFormation), Azure, GCP}\\
+        {\textbf{DevOps \& IaC}: Docker, Kubernetes, Terraform, Jenkins, GitHub Actions}\\
+        {\textbf{Languages}: Golang, TypeScript, JavaScript, Python, C\#, SQL}\\
+        {\textbf{Frameworks}: React, Next.js, ASP.NET Core, gRPC, Flask}\\
+        {\textbf{Databases}: PostgreSQL, MongoDB, MS SQL, DynamoDB}\\
+        {\textbf{Monitoring \& Security}: Prometheus, Grafana, SonarQube, AWS CloudTrail}
+    }}
+ \end{itemize}
 
-\sectionseparator
 
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Full Stack Developer}{June 2020 -- Aug. 2023}
+      {Samartha International InfoSolutions}{Kathmandu, Nepal}
+      \resumeItemListStart
+        \resumeItem{Spearheaded the development of a web application using React, ASP.NET Core, and PostgreSQL for E-commerce platform}
+        \resumeItem{Leveraged AWS services to deploy CI/CD pipelines, reducing deployment time by 50\%}
+        \resumeItem{Architected and implemented enterprise solution for CRM \& BPM using ASP.NET and MS SQL}
+        \resumeItem{Deployed solution on-site using Docker and Kubernetes, resulting in 30\% reduction in infrastructure cost}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {Intern Developer}{Nov. 2019 -- May 2020}
+      {Samartha International InfoSolutions}{Kathmandu, Nepal}
+      \resumeItemListStart
+        \resumeItem{Developed a REST API using ASP.NET Core and MS SQL for online billing system}
+        \resumeItem{Collaborated with a team of developers to build a full-stack web application using React and ASP.NET Core}
+        \resumeItem{Implemented a CI/CD pipeline using Jenkins for automated deployment}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Pharmakart} (\href{https://github.com/pharmakart/pharmakart-web}{\underline{Link}}) $|$ \emph{Golang, gRPC, Kubernetes, Terraform, AWS, GitHub Actions, PostgreSQL}}{Jan. 2025 -- Mar. 2025}
+          \resumeItemListStart
+          \resumeItem {Implemented a microservices architecture using \textbf{Golang and gRPC} for high-performance service communication}
+          \resumeItem {Orchestrated containerized deployments with \textbf{Kubernetes} and provisioned infrastructure using \textbf{Terraform} on AWS}
+          \resumeItem {Implemented zero-downtime deployment pipelines with \textbf{GitHub Actions \& AWS CodePipeline}}
+          \resumeItem {Achieved \textbf{99.9\% uptime} through resilient architecture and proper Kubernetes resource management}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------CERTIFICATES-----------
 \section{Certifications}
-\cvitem{}{\textbf{CREATIO DEVELOPER} (Issued 07/26/2022)}
-\cvitem{}{\textbf{AWS Certified Solutions Architect Associate} (In Progress)}
-\cvitem{}{\textbf{Certified Kubernetes Administrator} (In Progress)}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+        {\textbf{CREATIO DEVELOPER} (Issued 07/26/2022)}\\
+        {\textbf{AWS Certified Solutions Architect Associate} (In Progress)}\\
+        {\textbf{Certified Kubernetes Administrator} (In Progress)}
+    }}
+ \end{itemize}
 
-\sectionseparator
 
-\section{Interests}
-Enthusiastic about cloud security research, open-source contributions, gaming, indie music, and trekking. Active participant in tech communities and hackathons, constantly exploring emerging technologies in distributed systems and serverless architecture.
-
+%-------------------------------------------
 \end{document}

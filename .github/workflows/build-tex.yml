@@ -1,0 +1,25 @@
+name: Build LaTeX CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  compile:
+    name: Compile resume to PDF
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Run LaTeX build on Docker
+        uses: addnab/docker-run-action@v3
+        with:
+          image: thomasweise/docker-texlive-full:latest
+          options: -v ${{ github.workspace }}:/data
+          run: |
+            cd /data
+            pdflatex resume.tex
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Apply pdflatex changes
