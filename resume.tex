@@ -1,8 +1,6 @@
 %-------------------------
-% Resume in Latex
+% Updated Resume in LaTeX
 % Author : Ashutosh Sharma
-% Based off of: https://github.com/jakegut/resume
-% License : MIT
 %------------------------
 
 \documentclass[letterpaper,11pt]{article}
@@ -20,17 +18,15 @@
 \usepackage{tabularx}
 \input{glyphtounicode}
 
-%----------FONT OPTIONS----------
 \usepackage{CormorantGaramond}
 
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
+\fancyhf{}
 \fancyfoot{}
 \setlength{\footskip}{4.08003pt}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
@@ -43,7 +39,6 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Sections formatting
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
@@ -52,12 +47,7 @@
 
 %-------------------------
 % Custom commands
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
-}
-
+\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-2pt}}}
 \newcommand{\resumeSubheading}[4]{
   \vspace{-5pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -65,133 +55,90 @@
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
-
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
-
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]} 
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{document}
 
 %----------HEADING----------
-
 \begin{center}
     \textbf{\Huge \scshape Ashutosh Sharma} \\ \vspace{1pt}
     {Oshawa, ON, Canada} $|$
-    \small +1 647-226-0267 $|$ \href{mailto:asrma.sharma@gmail.com}{\underline{asrma.sharma@gmail.com}} $|$ 
+    \small +1 647-226-0267 $|$ \href{mailto:asrma.sharma@gmail.com}{\underline{asrma.sharma@gmail.com}} $|$
     \href{https://linkedin.com/in/asrma7}{\underline{linkedin.com/in/asrma7}} $|$
     \href{https://ashutoshportfolio.site}{\underline{ashutoshportfolio.site}}
 \end{center}
 
 %-----------SUMMARY-----------
-% \section{Summary}
-%   \resumeSubHeadingListStart
-%     \item{
-%       Cloud \& DevOps Engineer with 3+ years of experience building scalable web applications and managing cloud infrastructure. Skilled in AWS, Kubernetes, and Terraform for infrastructure automation. Experienced with Golang, ASP.NET Core, and React; 7+ years of Linux experience and a Neovim power user. Passionate about developer productivity and building tools that solve real customer problems.
-%     }
-%   \resumeSubHeadingListEnd
-
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Durham College}{Oshawa, ON}
-      {Post Graduate Certificate in Cybersecurity \& Cloud Computing}{Sep. 2023 -- Apr. 2025}
-      \resumeItemListStart
-        \resumeItem{Secure Software Development, Cloud Security, Network Security, Ethical Hacking, Splunk Fundamentals}
-        \resumeItem{AWS, Azure, GCP, Kubernetes, Terraform, Jenkins, CodePipeline, GitHub Actions, CI/CD, DevSecOps}
-        \resumeItem{\textbf{GPA}: 4.75 / 5.0}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {Leeds Beckett University}{Leeds, UK}
-      {Bachelor of Science Honours Computing}{Feb. 2019 -- July 2022}
-        \resumeItemListStart
-            \resumeItem{Software Development, Web Development, Database Management, SDLC, Networking}
-            \resumeItem{Java, Python, C\#, JavaScript, HTML, CSS, PHP, ASP.NET, React, Node.js, Express, MongoDB, PostgreSQL}
-            \resumeItem{\textbf{GPA}: 3.8 / 4.0}
-        \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
-%-----------TECHNICAL SKILLS-----------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-
-    \small{\item{
-        {\textbf{Cloud Platforms}: AWS (EC2, S3, Lambda, ECS, EKS, CloudFormation), Azure, GCP}\\
-        {\textbf{DevOps \& IaC}: Docker, Kubernetes, Terraform, Pulumi, Jenkins, GitHub Actions, AWS CodePipeline, Google CloudBuild, Azure DevOps}\\
-        {\textbf{Languages}: Golang, TypeScript, JavaScript, Python, C\#, SQL, Bash, AWK, sed}\\
-        {\textbf{Frameworks}: React, Next.js, ASP.NET Core, gRPC, Flask, Django (basic)}\\
-        {\textbf{Web Technologies}: HTTP/HTTPS, XML, JSON}\\
-        {\textbf{Databases}: PostgreSQL, MongoDB, MS SQL, DynamoDB}\\
-        {\textbf{Monitoring \& Security}: Prometheus, Grafana, SonarQube, AWS CloudTrail}\\
-        {\textbf{Operating Systems}: Linux (Arch, Ubuntu), Windows}\\
-        {\textbf{Tools}: Git, Neovim, Shell Scripting, Jira, Internal Tools Development}\\
-        {\textbf{Certifications}: HashiCorp Terraform Associate (\href{https://www.credly.com/badges/3fc692e0-6068-4337-a077-59e033d1a9d4/public_url}{\underline{Verified Badge}}), CREATIO Developer (2022)}
-    }}
- \end{itemize}
+\section*{Professional Summary}
+Cloud and DevOps Engineer with hands-on experience designing scalable infrastructure using AWS, Kubernetes, and Terraform. Proven track record automating CI/CD pipelines and container-based deployments using GitHub Actions and CodePipeline. Passionate about infrastructure as code, secure cloud architecture, and developer productivity.
 
 %-----------EXPERIENCE-----------
 \section{Experience}
-  \resumeSubHeadingListStart
+\resumeSubHeadingListStart
 
-    \resumeSubheading
-      {Cloud Engineer Co-op}{May 2025 -- Aug. 2025}
-      {Health Espresso (Remote)}{}
-      \resumeItemListStart
-        \resumeItem{Developed and deployed containerized \textbf{AWS Lambda} functions using \textbf{Docker}, improving maintainability and reducing deployment time by over \textbf{40\%}.}
-        \resumeItem{Engineered a Terraform-based CI/CD pipeline with \textbf{AWS CodePipeline} and \textbf{CodeBuild}, enabling seamless promotion of new functions to dev and prod environments.}
-        \resumeItem{Wrote robust \textbf{Bash} automation scripts to dynamically generate alias, permissions, and configuration templates for multi-region support.}
-        \resumeItem{Optimized \textbf{Terraform} modules, reducing resource duplication and improving reusability across deployments.}
-        \resumeItem{Collaborated on technical documentation and cloud service mapping with other co-op students; contributed to over \textbf{10} service diagrams and process documents reviewed by senior engineers.}
-      \resumeItemListEnd
+\resumeSubheading{Cloud Engineer Co-op}{May 2025 -- Aug. 2025}{Health Espresso (Remote)}{}
+\resumeItemListStart
+\resumeItem{Built and containerized 40+ AWS Lambda functions using Python and Node.js, enabling multi-region deployment.}
+\resumeItem{Migrated legacy ZIP-based Lambdas to image-based deployment, enabling GitHub-based CI/CD workflows and reducing promotion time by over 95\% (from 1 day to ~15 minutes).}
+\resumeItem{Developed Terraform modules and integrated CI/CD workflows using AWS CodePipeline and CodeBuild.}
+\resumeItem{Authored Bash scripts to scaffold aliases, IAM permissions, and environment configurations dynamically.}
+\resumeItem{Used Secrets Manager and Parameter Store for secure environment and shared config management.}
+\resumeItem{Monitored and debugged application issues via CloudWatch Logs across services.}
+\resumeItem{Refactored IAM policies in Terraform to enforce least privilege and eliminate unused permissions.}
+\resumeItem{Worked closely with developers and QA teams to coordinate smooth and stable Lambda releases.}
+\resumeItemListEnd
 
-
-    \resumeSubheading
-      {Full Stack Developer}{June 2020 -- Aug. 2023}
-      {Samartha International InfoSolutions}{Kathmandu, Nepal}
-      \resumeItemListStart
-        \resumeItem{Spearheaded the development of an E-commerce platform using React, ASP.NET Core, and PostgreSQL.}
-        \resumeItem{Leveraged AWS services and CI/CD pipelines to reduce deployment time by 50\%.}
-        \resumeItem{Architected CRM \& BPM solutions using ASP.NET and MS SQL to streamline business workflows.}
-        \resumeItem{Deployed containerized workloads with Docker \& Kubernetes, optimizing scalability and reducing infrastructure cost by 30\%.}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
+\resumeSubheading{Full Stack Developer}{June 2020 -- Aug. 2023}{Samartha International InfoSolutions}{Kathmandu, Nepal}
+\resumeItemListStart
+\resumeItem{Delivered full-stack e-commerce platforms using React, ASP.NET Core, and PostgreSQL.}
+\resumeItem{Designed and implemented CI/CD pipelines to reduce release cycles by 50\%.}
+\resumeItem{Built CRM/BPM systems to streamline business operations with lead tracking and workflow automation.}
+\resumeItem{Managed infrastructure using on-prem Kubernetes across 30-server cluster on VMWare (vSphere).}
+\resumeItem{Provisioned resources, maintained deployments, and containerized workloads using Docker.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
 \section{Projects}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{PharmaKart} (\href{https://github.com/pharmakart/pharmakart-web}{\underline{Link}}) $|$ \emph{Golang, gRPC, Kubernetes, Terraform, AWS, GitHub Actions, PostgreSQL}}{Jan. 2025 -- Mar. 2025}
-          \resumeItemListStart
-          \resumeItem{Designed and deployed microservices using \textbf{Golang} and \textbf{gRPC} with JSON-based APIs.}
-          \resumeItem{Provisioned AWS infrastructure using \textbf{Terraform} and orchestrated services via \textbf{Kubernetes}.}
-          \resumeItem{Set up zero-downtime CI/CD pipelines using \textbf{GitHub Actions} and \textbf{AWS CodePipeline}.}
-          \resumeItem{Built and deployed internal admin tooling to manage users, prescriptions, and orders—accelerating support workflows.}
-          \resumeItem{Achieved \textbf{99.9\% uptime} using fault-tolerant architecture and proactive Kubernetes resource tuning.}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+\resumeProjectHeading{\textbf{PharmaKart} (\href{https://github.com/pharmakart/pharmakart-web}{\underline{Link}}) $|$ \emph{Golang, gRPC, Kubernetes, Terraform, AWS, GitHub Actions, PostgreSQL}}{Jan. 2025 -- Mar. 2025}
+\resumeItemListStart
+\resumeItem{Built cloud-native pharmacy platform with microservices for auth, order, payment, and reminders.}
+\resumeItem{Designed PostgreSQL schema, wrote DB migrations, and optimized indexing for search and order processing.}
+\resumeItem{Implemented notification system using Lambda + SNS for scheduled refill alerts.}
+\resumeItem{Integrated Stripe for secure payments; managed refunds and validations through admin dashboard.}
+\resumeItem{Developed frontend using Next.js, ShadCN, and Tailwind CSS with responsive UI components.}
+\resumeItem{Implemented JWT-based auth with refresh tokens, RBAC roles, and Zod-based input validation.}
+\resumeItem{Provisioned infra using Terraform; deployed on EKS with 99.9\% uptime across environments.}
+\resumeItem{Built CI/CD pipelines using GitHub Actions and CodePipeline for zero-downtime deployment.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
 
-%-------------------------------------------
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading{Durham College}{Oshawa, ON}{Postgraduate Certificate in Cybersecurity \& Cloud Computing}{Sep. 2023 -- Apr. 2025}
+\resumeItemListStart
+\resumeItem{Focused on Secure Software, Cloud Security, and DevSecOps using AWS, Azure, GCP.}
+\resumeItem{Gained hands-on experience with Kubernetes, Terraform, GitHub Actions, and Jenkins.}
+\resumeItem{\textbf{GPA}: 4.75 / 5.0}
+\resumeItemListEnd
+
+\resumeSubheading{Leeds Beckett University}{Leeds, UK}{BSc (Hons) Computing}{Feb. 2019 -- July 2022}
+\resumeItemListStart
+\resumeItem{Covered SDLC, Web Dev, Database Design, Java, C\#, Python, and ASP.NET.}
+\resumeItem{\textbf{GPA}: 3.8 / 4.0}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
 \end{document}
