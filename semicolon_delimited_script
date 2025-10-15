@@ -4,3 +4,4 @@ pdflatex resume-AWS.tex
 pdflatex resume-Azure.tex
 pdflatex resume-GCP.tex
 pdflatex resume-Dev.tex
+
