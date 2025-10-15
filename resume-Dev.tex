@@ -1,0 +1,139 @@
+%-------------------------
+% Updated Resume in LaTeX
+% Author : Ashutosh Sharma
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+% \usepackage{CormorantGaramond}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\setlength{\footskip}{4.08003pt}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+% ----- Custom Commands -----
+\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{0pt}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-5pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]} 
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% ----- Document -----
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge Ashutosh Sharma} \\ \vspace{1pt}
+    {Oshawa, ON, Canada} $|$
+    \small +1 647-226-0267 $|$ \href{mailto:asrma.sharma@gmail.com}{\underline{asrma.sharma@gmail.com}} $|$
+    \href{https://linkedin.com/in/asrma7}{\underline{linkedin.com/in/asrma7}} $|$
+    \href{https://ashutoshportfolio.site}{\underline{ashutoshportfolio.site}}
+\end{center}
+
+% ----- Summary -----
+\section*{Professional Summary}
+Cloud and DevOps Engineer specializing in \textbf{AWS}, \textbf{Terraform}, \textbf{Kubernetes}, and \textbf{CI/CD automation}. Experienced in building \textbf{containerized workloads}, managing \textbf{secure multi-region deployments}, and implementing \textbf{infrastructure as code (IaC)}. Passionate about \textbf{cloud-native design}, \textbf{DevSecOps}, and \textbf{automation for operational excellence}.
+
+% ----- Experience -----
+\section*{Experience}
+\begin{itemize}[leftmargin=*]
+
+  \resumeSubheading{Health Espresso}{Remote}{Cloud Engineer Co-op}{May 2025 -- Aug. 2025}
+  \begin{itemize}
+    \resumeItem{Built and containerized over 40 \textbf{AWS Lambda} functions using \textbf{Python} and \textbf{Node.js} for scalable multi-region deployment.}
+    \resumeItem{Migrated ZIP-based Lambdas to \textbf{container images}, enabling \textbf{GitHub-integrated CI/CD} and reducing deployment time by 95\%.}
+    \resumeItem{Developed modular \textbf{Terraform} templates and integrated \textbf{AWS CodePipeline} and \textbf{CodeBuild} for automated provisioning.}
+    \resumeItem{Refactored \textbf{IAM policies} to enforce least privilege and automated alias creation via \textbf{Bash scripts}.}
+    \resumeItem{Used \textbf{AWS Secrets Manager} and \textbf{Parameter Store} to centralize secure configuration management.}
+    \resumeItem{Monitored and troubleshot services using \textbf{CloudWatch Logs} and \textbf{AWS X-Ray}.}
+    \resumeItem{Collaborated with developers and QA to deliver stable releases through version-controlled pipelines.}
+  \end{itemize}
+
+  \resumeSubheading{Samartha International InfoSolutions}{Kathmandu, Nepal}{Full Stack Developer}{Jun. 2020 -- Aug. 2023}
+  \begin{itemize}
+    \resumeItem{Delivered enterprise applications using \textbf{React}, \textbf{ASP.NET Core}, and \textbf{PostgreSQL}.}
+    \resumeItem{Automated deployments using \textbf{Jenkins} and \textbf{Docker}, reducing release cycles by 50\%.}
+    \resumeItem{Maintained on-prem \textbf{Kubernetes} clusters (30-node \textbf{vSphere} setup) and containerized workloads.}
+  \end{itemize}
+
+\end{itemize}
+
+% ----- Projects -----
+\section*{Projects}
+\begin{itemize}[leftmargin=*]
+  \resumeProjectHeading{PharmaKart (\href{https://github.com/pharmakart/pharmakart-web}{GitHub})}{Jan. 2025 -- Mar. 2025}
+  \begin{itemize}
+    \resumeItem{Developed a cloud-native pharmacy platform using \textbf{Golang microservices}, \textbf{gRPC}, and \textbf{PostgreSQL} backend.}
+    \resumeItem{Deployed backend on \textbf{AWS EKS} using \textbf{Terraform} with environment separation and 99.9\% uptime.}
+    \resumeItem{Built \textbf{CI/CD pipelines} via \textbf{GitHub Actions} and \textbf{CodePipeline} for zero-downtime updates.}
+    \resumeItem{Implemented \textbf{AWS Lambda} + \textbf{SNS} reminder service for medicine refill notifications.}
+    \resumeItem{Frontend built with \textbf{Next.js}, \textbf{ShadCN}, and \textbf{Tailwind CSS} for responsive UI.}
+  \end{itemize}
+\end{itemize}
+
+% ----- Education -----
+\section*{Education \\ \& Certification}
+\begin{itemize}[leftmargin=*]
+  \resumeSubheading{Durham College}{Oshawa, ON}{Postgraduate Certificate in Cybersecurity \& Cloud Computing}{Sep. 2023 -- Apr. 2025}
+  \begin{itemize}
+    \resumeItem{Focused on \textbf{Cloud Security}, \textbf{DevSecOps}, and \textbf{Infrastructure as Code} using \textbf{AWS}, \textbf{Azure}, and \textbf{GCP}.}
+    \resumeItem{Gained hands-on experience with \textbf{Kubernetes}, \textbf{Terraform}, \textbf{GitHub Actions}, and \textbf{Jenkins}.}
+    \resumeItem{GPA: 4.75 / 5.0}
+  \end{itemize}
+
+  \resumeSubheading{Leeds Beckett University}{Leeds, UK}{BSc (Hons) Computing}{Feb. 2019 -- Jul. 2022}
+  \begin{itemize}
+    \resumeItem{Studied \textbf{SDLC}, \textbf{Web Development}, \textbf{Database Design}, and \textbf{Programming} (Java, C\#, Python).}
+    \resumeItem{GPA: 3.8 / 4.0}
+  \end{itemize}
+
+  \resumeSubheading{HashiCorp Certified Terraform Associate}{--}{Credential ID: \href{https://www.credly.com/badges/3fc692e0-6068-4337-a077-59e033d1a9d4/public_url}{3fc692e0-6068-4337-a077-59e033d1a9d4}}{Apr. 2025}
+\end{itemize}
+
+\end{document}

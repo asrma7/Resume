@@ -20,6 +20,10 @@ jobs:
           run: |
             cd /data
             pdflatex resume.tex
+            pdflatex resume-AWS.tex
+            pdflatex resume-Azure.tex
+            pdflatex resume-GCP.tex
+            pdflatex resume-Dev.tex
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Apply pdflatex changes
