@@ -1,0 +1,256 @@
+{
+  "name": "Ashutosh Sharma",
+  "location": "Toronto, Ontario, Canada",
+  "email": "asrma.sharma@gmail.com",
+  "summary": "Cloud and DevOps Engineer with strong development experience, skilled in building, automating, and deploying scalable systems using AWS, Terraform, Kubernetes, and Golang. Over seven years of Linux experience with a solid foundation in both software development and cloud infrastructure. Passionate about automation, CI/CD, and secure design.",
+  "career_goal": "To build scalable, automated, and secure cloud infrastructures while contributing to high-impact DevOps and software engineering teams.",
+  "education": [
+    {
+      "institution": "Durham College",
+      "program": "Postgraduate Certificate, Cloud Computing",
+      "start_date": "2024-09",
+      "end_date": "2025-04",
+      "location": "Oshawa, Ontario, Canada",
+      "focus": [
+        "AWS",
+        "Azure",
+        "GCP",
+        "Terraform",
+        "Kubernetes",
+        "CI/CD",
+        "Cloud Security"
+      ]
+    },
+    {
+      "institution": "Durham College",
+      "program": "Postgraduate Certificate, Cybersecurity",
+      "start_date": "2023-09",
+      "end_date": "2024-04",
+      "location": "Oshawa, Ontario, Canada",
+      "focus": [
+        "Network Security",
+        "Cloud Security",
+        "Risk Assessment",
+        "Threat Modeling"
+      ]
+    },
+    {
+      "institution": "Leeds Beckett University",
+      "program": "BSc (Hons) in Computing",
+      "start_date": "2019-02",
+      "end_date": "2022-07",
+      "location": "Leeds, United Kingdom"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Health Espresso",
+      "title": "Cloud / DevOps Engineer (Co-op)",
+      "start_date": "2025-05",
+      "end_date": "2025-08",
+      "location": "Remote",
+      "supervisor": "Mark Steele",
+      "highlights": [
+        "Containerized over 40 AWS Lambda functions using Python and Node.js, migrating from ZIP to ECR container images.",
+        "Built reusable Terraform modules for AWS CodeBuild and CodePipeline to automate Docker image builds and deployments.",
+        "Integrated Slack notifications via SNS for build and deployment alerts.",
+        "Refined IAM policies for least privilege and alias-based Lambda roles.",
+        "Collaborated in Agile workflows with daily stand-ups and Confluence documentation."
+      ],
+      "tech_stack": [
+        "AWS Lambda",
+        "CodeBuild",
+        "CodePipeline",
+        "SNS",
+        "IAM",
+        "Terraform",
+        "Python",
+        "Node.js",
+        "Docker",
+        "Slack"
+      ]
+    },
+    {
+      "company": "Samartha International Infosolution",
+      "title": "Full Stack Developer",
+      "start_date": "2020-06",
+      "end_date": "2023-08",
+      "location": "Kathmandu, Nepal",
+      "type": "Full-time, on-site",
+      "highlights": [
+        "Developed enterprise web applications using React.js, C#, Entity Framework, and MSSQL.",
+        "Built business process automation workflows using Creatio and custom backend APIs.",
+        "Managed on-premises and Azure cloud deployments using Docker and Kubernetes.",
+        "Configured IIS, Apache, and NGINX servers for hosting and scaling applications.",
+        "Collaborated across teams to enhance CI/CD pipelines and improve release reliability.",
+        "Contributed to both development and DevOps efforts, improving performance and reliability."
+      ],
+      "tech_stack": [
+        "React.js",
+        "C#",
+        "Entity Framework",
+        "Creatio",
+        "MSSQL",
+        "Azure",
+        "Docker",
+        "Kubernetes",
+        "IIS",
+        "Windows Server",
+        "Apache",
+        "NGINX"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "PharmaKart",
+      "description": "Online pharmacy e-commerce platform built with a Go microservices architecture.",
+      "link": "https://github.com/pharmakart",
+      "details": [
+        "Go (Gin + gRPC) microservices for authentication, product, order, payment, reminder, and gateway services.",
+        "Infrastructure as Code using Terraform modules for VPC, EKS, ECS, RDS, and S3.",
+        "CI/CD with AWS CodeBuild, CodePipeline, and GitHub Actions to automate Docker builds and ECR deployments.",
+        "Stripe payment integration and SNS/SQS reminder service with CloudWatch monitoring.",
+        "Frontend built with Next.js, TailwindCSS, and ShadCN UI."
+      ],
+      "tech_stack": [
+        "Go",
+        "gRPC",
+        "PostgreSQL",
+        "Redis",
+        "AWS EKS",
+        "AWS ECS",
+        "AWS RDS",
+        "AWS S3",
+        "AWS SNS/SQS",
+        "Terraform",
+        "Stripe",
+        "Next.js",
+        "TailwindCSS",
+        "ShadCN UI",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "name": "Aayo",
+      "description": "Real-time multiplayer quiz platform similar to Kahoot.",
+      "link": "https://github.com/asrma7/aayo-backend",
+      "details": [
+        "Backend in Go (Gin + WebSocket hub + JWT authentication).",
+        "Supports CSV/ZIP quiz upload with image processing, real-time scoring, and leaderboards.",
+        "Frontend built with Next.js, TailwindCSS, ShadCN UI, and Framer Motion animations.",
+        "Implemented GitHub Actions workflows for backend and frontend CI/CD pipelines with Docker image builds.",
+        "Planned mobile app port using Flutter or React Native."
+      ],
+      "tech_stack": [
+        "Go",
+        "WebSocket",
+        "PostgreSQL",
+        "Next.js",
+        "TailwindCSS",
+        "ShadCN UI",
+        "Recharts",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "name": "Automation & Scripting Toolkit",
+      "description": "Collection of automation scripts and workflows designed to streamline development and deployment pipelines.",
+      "details": [
+        "Developed Bash and Python scripts for automating repetitive DevOps tasks such as environment setup, log collection, and deployment validation.",
+        "Created n8n automation workflows for CI/CD notifications, repository synchronization, and cloud event handling.",
+        "Used GitHub Actions and AWS CLI to trigger automated build, deploy, and clean-up operations across environments.",
+        "Improved developer productivity and reduced manual errors by standardizing automation scripts across projects."
+      ],
+      "tech_stack": [
+        "Bash",
+        "Python",
+        "n8n",
+        "GitHub Actions",
+        "AWS CLI",
+        "Docker"
+      ]
+    }
+  ],
+  "technical_skills": {
+    "cloud": [
+      "AWS (EKS, ECS Fargate, Lambda, RDS, S3, IAM, Secrets Manager, Parameter Store, CloudWatch, SNS, SQS, CodeBuild, CodePipeline, Route53, ACM, VPC)",
+      "Azure (App Services, VNets, Bicep, IAM)",
+      "GCP (Compute Engine, Cloud Functions)"
+    ],
+    "infrastructure": [
+      "Terraform",
+      "Helm",
+      "Kubernetes",
+      "Docker",
+      "Podman",
+      "OIDC Roles"
+    ],
+    "programming": [
+      "Golang",
+      "C#",
+      "Python",
+      "Bash",
+      "Nushell",
+      "JavaScript",
+      "TypeScript",
+      "Lua"
+    ],
+    "frontend": ["React.js", "Next.js", "TailwindCSS", "ShadCN UI"],
+    "databases": ["PostgreSQL", "MSSQL", "Redis"],
+    "automation": [
+      "AWS CodeBuild",
+      "AWS CodePipeline",
+      "GitHub Actions",
+      "Makefiles",
+      "BuildKit",
+      "n8n"
+    ],
+    "servers": [
+      "IIS",
+      "Apache",
+      "NGINX",
+      "Windows Server",
+      "Linux (Arch, Ubuntu)"
+    ],
+    "security": [
+      "IAM least privilege",
+      "Secrets Manager",
+      "CSA Egregious 11 Study"
+    ],
+    "tools": [
+      "Git",
+      "Slack",
+      "Frida",
+      "Virt-manager",
+      "QEMU/KVM virtualization"
+    ]
+  },
+  "certifications": [
+    {
+      "name": "HashiCorp Terraform Associate (002)",
+      "status": "Completed"
+    },
+    {
+      "name": "AWS Certified Solutions Architect – Associate",
+      "status": "In Progress"
+    }
+  ],
+  "strengths": [
+    "Full lifecycle experience across development, DevOps, and cloud deployment.",
+    "Strong Linux and automation foundation (7+ years).",
+    "Proficient in modular Terraform design and CI/CD automation.",
+    "Hands-on with Bash, Python, and n8n automation for workflow orchestration.",
+    "Versatile across both on-premises and cloud infrastructures (AWS, Azure)."
+  ],
+  "hobbies": [
+    "Reverse engineering and iOS security research (Theos, Frida, IL2CPP).",
+    "Active on TryHackMe and Hack The Box CTF challenges.",
+    "Ethical hacking and exploit analysis."
+  ],
+  "links": {
+    "github": "https://github.com/asrma7",
+    "portfolio": "https://ashutoshportfolio.site",
+    "linkedin": "https://linkedin.com/in/asrma7"
+  }
+}
